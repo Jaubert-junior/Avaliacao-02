@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação 02</title>
+</head>
+<body>
+    <section>
+    <header class="cabecalho">
+        <h1 class = "marca">Livreiro</h1>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario" class="icone_usuario">
+            <p>Jaubert Junior</p>
+        </div>
+    </header>
+    <h3>Tabela com o objetivo organizar leituras</h3>
+
+    </section>
+
+    <section id="adiciornar_livros">
+        <form>
+            <div class="divForm">
+                <span class="spanForm">Título</span>
+                <input name="titulo" class="inputForm" id="titulo">
+            </div>
+            <div class="divForm">
+                <span class="spanForm">autor</span>
+                <input name="autor" class="inputForm" id="autor">
+            </div>
+            <div class="divForm">
+                <span class="spanForm">Gênero</span>
+                <input name="genero" class="inputForm" id="genero">
+            </div>
+            <div class="divForm">
+                <span class="spanForm">Avaliação</span>
+                <input name="avaliacao"  class="inputForm" id="avaliacao">
+            <!--select de estrelas? -->
+            </div>
+            <div class="divForm">
+                <button id="botaoAdicionar">Adicionar livro</button>
+            </div>
+        </form>
+
+    </section>
+    <div class="divTable">
+        <div class="divTotal">
+            <h3>Total:</h3>
+            <span id="contador">0</span>
+        </div>
+    <table class="tabelaLivros">
+        <th>ID</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Gênero</th>
+        <th>Avaliação</th>
+        <th>Edição</th>
+        <tr class="ID"></tr>
+        <tr class="titulo"></tr>
+        <tr class="autor"></tr>
+        <tr class="genero"></tr>
+        <tr class="avaliacao"></tr>
+        <tr class="edicao"></tr>
+    </table>
+    </div>
+</body>
+</html>
