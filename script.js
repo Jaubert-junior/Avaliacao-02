@@ -23,7 +23,8 @@ getById('botaoAdicionar').addEventListener('click', (e) => {
         titulo: getById('titulo').value.trim(),
         autor: getById('autor').value.trim(),
         genero: getById('genero').value.trim(),
-        avaliacao: getById('avaliacao').value
+        avaliacao: getById('avaliacao').value,
+        data: Date.now,
     }
 
   
@@ -64,17 +65,24 @@ function contar () {
     for (let i = 0; i < li.length; i++) {
 
         let tr = document.createElement("tr")
+        let td = document.createElement('td')
+        let id = document.createElement('td')
+        let titulo = document.createElement('td')
+        let autor = document.createElement('td')
+        let genero = document.createElement('td')
+        let avaliacao = document.createElement('td')
+        let dataCriacao = document.createElement('td')
 
-        tr.innerHTML = `
-            <td>${i + 1}</td>
-            <td>${li[i].titulo}</td>
-            <td>${li[i].autor}</td>
-            <td>${li[i].genero}</td>
-            <td>${li[i].avaliacao}</td>
-            <td class="excluir" data-id="${i}">excluir</td>
-        `
+
+        id.innerHTML = i++
+        titulo.innerHTML = li[i].titulo
+        autor.innerHTML = li[i].autor
+        genero.innerHTML = li[i].genero
+        avaliacao.innerHTML =  li[i].avaliacao
+        dataCriacao.innerHTML =  li[i].data
 
         corpoTabela.appendChild(tr)
+
     }
 
     tabela.appendChild(corpoTabela)
