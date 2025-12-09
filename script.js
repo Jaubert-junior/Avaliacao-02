@@ -1,7 +1,7 @@
 function getById(id) {
     return document.getElementById(id)
 }
-const seletorTema = document.getById("temaSelect");
+const seletorTema = getById("temaSelect");
 
 const temaSalvo = localStorage.getItem("temaSite") || "claro";
 document.body.className = temaSalvo;
