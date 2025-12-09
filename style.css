@@ -1,0 +1,100 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DFE5F2;
+}
+.marca{
+    color: #DFE5F2;
+    margin-left: 16px;
+}
+header{
+    background-color:#1D2659 ;
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.usuario{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+    margin-top: 5px;
+}
+.usuario img {
+    width: 50px;
+}
+.usuario p {
+    color: #DFE5F2;
+    font-weight: bold;
+}
+
+table{
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+tr:hover {
+    background-color: #0c0fdf;
+    cursor: pointer;
+}
+td, th {
+     border: 1px solid #000000;
+    padding: 3px 2px;
+}
+input, select{
+    border-radius: 10px;
+}
+.divForm, p{
+    margin: 16px;
+}
+.dark {
+    --bg: #0D0D0D;
+    --bg-card: #1A1A1A;
+    --texto: #F2F2F2;
+    --primaria: #4A90E2; 
+}
+:root {
+    --bg: #F2F2F;
+    --bg-card: #42628C;
+    --texto: #0D0D0D;
+    --primaria: #1A2A40;               
+}
+.vibrante {
+    --bg: #1A0033;
+    --bg-card: #0e004d;     
+    --texto: #ffffff;
+    --primaria: #7F00FF;    
+    --primaria-alt: #00A2FF;
+}
+* {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+body {
+    background: var(--bg);
+    color: var(--texto);
+}
+
+header, .divForm, .tabelaLivros, .total, .divTable {
+    background: var(--bg-card);
+}
+
+.botaoAdicionar {
+    background: var(--primaria);
+    color: rgb(255, 255, 255);
+}
+
+.temaSelect {
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação 02</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="marca">Livreiro</h1>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario" class="icone_usuario">
+            <p>Jaubert Junior</p>
+        </div>
+    </header>
+
+    <p class="descricao">Tabela com o objetivo de organizar leituras de forma rápida e prática</p>
+    <div class="divForm">
+        <form id="formLivro">
+            <div class="divForm">
+                <span class="spanForm">Título:</span>
+                <input name="titulo" class="inputForm" id="titulo">
+            </div>
+
+            <div class="divForm">
+                <span class="spanForm">Autor:</span>
+                <input name="autor" class="inputForm" id="autor">
+            </div>
+
+            <div class="divForm">
+                <span class="spanForm">Gênero:</span>
+                <input name="genero" class="inputForm" id="genero">
+            </div>
+
+            <div class="divForm">
+                <span class="spanForm">Avaliação:</span>
+                <select id="avaliacao">
+                    <option value="0">não lido</option>
+                    <option value="1">&#11088</option>
+                    <option value="2">&#11088 &#11088</option>
+                    <option value="3">&#11088 &#11088 &#11088</option>
+                    <option value="4">&#11088 &#11088 &#11088 &#11088</option>
+                    <option value="5">&#11088 &#11088 &#11088 &#11088 &#11088</option>
+                </select>
+            </div>
+            <div class="divForm">
+                <button id="botaoAdicionar" class="botaoAdicionar" type="submit">Adicionar livro</button>
+        </form>
+            <select id="temaSelect" class="temaSelect">
+        <option value="claro">Modo Claro</option>
+        <option value="dark">Modo Dark</option>
+        <option value="vibrante">Modo Vibrante</option>
+    </select>
+    </div>
+
+    <div class="total">
+        <p>Total:</p>
+        <p id="contador">0</p>
+    </div>
+
+    <div class="divTable">
+        <table class="tabelaLivros" id="tabela">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Gênero</th>
+                    <th>Avaliação</th>
+                    <th>Edição</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+</html>
