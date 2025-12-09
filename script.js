@@ -58,7 +58,6 @@ function contar () {
     let corpoTabela = document.createElement('tbody')
     let total = getById('contador')
 
-    // Remove apenas o tbody antigo
     let antigo = tabela.querySelector("tbody")
     if (antigo) tabela.removeChild(antigo)
 
